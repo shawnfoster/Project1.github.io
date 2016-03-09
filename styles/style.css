@@ -1,0 +1,27 @@
+.topRow {
+   height: 130px;
+   background: grey;
+   margin-top: 30px;
+   border: solid black 2px;
+}
+
+.midLong {
+   height: 450px;
+   background: grey;
+   margin-top: 30px;
+   border: solid black 2px;
+}
+
+.midShort {
+   height: 450px;
+   background: grey;
+   margin-top: 30px;
+   margin-bottom: 30px;
+   border: solid black 2px;
+}
+
+.bottomRow {
+   height: 130px;
+   background: grey;
+   border: solid black 2px;
+}
