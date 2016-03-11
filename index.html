@@ -7,51 +7,74 @@
     <link rel="stylesheet" href="styles/normalize.css" media="screen" title="no title" charset="utf-8">
     <link rel="stylesheet" href="styles/skeleton.css" media="screen" title="no title" charset="utf-8">
     <link rel="stylesheet" href="styles/style.css" media="screen" title="no title" charset="utf-8">
-    <!-- add scripts -->
-    <script src="scripts/jquery.js"></script>
-    <script src="scripts/app.js"></script>
-    <script src="scripts/animations.js"></script>
-
-
   </head>
   <body>
+    <!--Welcome-->
+    <div id="fadeIn">
     <h1>Can You Guess the FX?</h1>
+    </div>
+
+    <h2 id="test">Here's the clip!</h2>
+
+    <audio id="player" controls>
+      <source type="audio/mp3" src="">
+    </audio>
+
+    <div class="container">
+
+    <h3 id="selectAnswer">Please select your answer!</h3>
+    </div>
 
     <div class="container">
       <div class="row">
-        <div class="three columns topRow">
+        <div class="three columns getItOne">
         </div>
-        <div class="two columns topRowSmall1">
+        <div class="two columns getIt">
         </div>
-        <div class="two columns topRowSmall2">
+        <div class="three columns getItMid">
+          <span class="multipleChoice">
+          <form id="answers">
+              <input type="radio" name="testone" value="phaser"/> Phaser<br>
+              <input type="radio" name="testone" value="delay"/> Delay<br>
+              <input type="radio" name="testone" value="flanger"/> Flanger<br>
+              <input type="radio" name="testone" value="wahwah"/> WahWah<br>
+              <input type="radio" name="testone" value="chorus"/> Chorus<br>
+              <input type="radio" name="testone" value="bigmuff"/> BigMuff<br>
+              <input type="radio" name="testone" value="whammy"/> Whammy<br>
+              <input type="radio" name="testone" value="stock_distortion"/> Stock Distortion<br>
+              </br>
+              <div class="areYouAWinner">
+              <button type="submit">Submit Answer</button>
+              </div>
+          </form>
+          </span>
         </div>
-        <div class="two columns topRowSmall3">
+        <div class="two columns getItThree">
         </div>
-        <div class="two columns topRowSmall4">
+        <div class="three columns getIt">
         </div>
       </div>
     </div>
+    <br></br>
     <div class="container">
       <div class="row">
-        <div class="twelve columns midRow">
+        <div class="two columns submitTwo">
+        </div>
+        <div class="two columns submitTwo">
+        </div>
+        <div class="five columns submitOne">
+          <p>
+            <strong>Score:Score:Score:Score:Score:Score:Score:Score:Score:Score:Score:Score:Score:Score:Score::</strong> <span class="score">0</span>
+          </p>
+        </div>
+        <div class="two columns submitTwo">
+        </div>
+        <div class="two columns submitTwo">
         </div>
       </div>
     </div>
-    <div class="container">
-      <div class="row">
-        <div class="four columns thirdLine">
-        </div>
-        <div class="four columns thirdLine">
-        </div>
-        <div class="four columns thirdLine">
-        </div>
-      </div>
-    </div>
-    <div class="container">
-      <div class="row">
-        <div class="twelve columns bottomRow">
-        </div>
-      </div>
-    </div>
-  </body>
-  </html>
+    <script src="scripts/jquery.js"></script>
+    <script src="scripts/animations.js"></script>
+    <script src="scripts/app.js"></script>
+ </body>
+</html>

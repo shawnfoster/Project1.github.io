@@ -1,27 +1,258 @@
-.topRow {
+body {
+  color: white;
+  background-color: black;
+}
+
+.container {
+  display: block;
+}
+
+.test {
+  margin-top: -10px;
+}
+
+#fadeIn {
+  display: none;
+  text-align: center;
+}
+
+h1 {
+    margin-top: -50px;
+    margin-bottom: -50px;
+    font-weight: 900;
+    font-size: 3;
+    padding: 100px;
+    color: #DDDDDE;x
+    text-align: center;
+}
+
+ h2 {
+    margin: auto;
+    background: #E64331;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 30px;
+    display: block;
+    text-align: center;
+    line-height: 40px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    color: #fff;
+ }
+
+ #selectAnswer {
+    margin: auto;
+    margin-left: -5px;
+    background: #E64331;
+    font-size: 30px;
+    display: block;
+    text-align: center;
+    line-height: 40px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    color: #fff;
+ }
+
+ #player {
+   margin: auto;
+   display: block;
+
+ }
+ #answers {
+   text-align: left;
+   font-size: 20px;
+   padding-left: 0px;
+ }
+
+ .areYouAWinner {
+   display: block;
+   margin-left: -20px;
+ }
+
+ .multipleChoice {
+   margin-top: -20px;
+   text-align: left;
+   width: 200px;
+ }
+
+
+.getItOne {
+  height: 250px;
+  width: 110px;
+  margin-top: 15px;
+  margin-right: 7.8px;
+  margin-left: 7.8px;
+}
+
+.getIt {
+  height: 250px;
+  width: 110px;
+  margin-top: 15px;
+  margin-right: 7.8px;
+  margin-left: 7.8px;
+}
+
+.getItMid {
+  color: black;
+  height: 325px;
+  width: 110px;
+  padding-left: 40px;
+  background: lightgrey;
+  margin-top: 15px;
+  margin-right: 7.8px;
+  margin-left: 7.8px;
+  border: solid white 2px;
+}
+
+.getItThree {
+  height: 250px;
+  width: 110px;
+  margin-top: 15px;
+  margin-right: 7.8px;
+  margin-left: 7.8px;
+}
+
+.submitOne {
+  height: 250px;
+  width: 210px;
+  margin-top: 35px;
+  margin-right: 7.8px;
+  margin-left: 7.8px;
+  background-color: grey;
+  word-wrap: break-word;
+}
+
+.submitTwo {
+  height: 250px;
+  width: 110px;
+  margin-top: 35px;
+  margin-right: 7.8px;
+  margin-left: 7.8px;
+  background-color: grey;
+}
+
+.table {
+  margin-left: 20px;
+}
+ /*.topRowSmalls1 {
+   height: 50px;
+   width: 110px;
+   background: grey;
+   margin-top: 65px;
+   margin-left: 10px;
+   float: right;
+   border: solid black 2px;
+ }
+
+ .topRowSmalls2 {
+   height: 50px;
+   width: 110px;
+   background: grey;
+   margin-top: 65px;
+   float: right;
+   border: solid black 2px;
+ }
+
+ .topRowSmalls3 {
+   height: 50px;
+   width: 110px;
+   background: grey;
+   margin-top: 65px;
+   float: right;
+   border: solid black 2px;
+ }
+
+ .topRowSmalls4 {
+   height: 50px;
+   width: 110px;
+   background: grey;
+   margin-top: 65px;
+   float: right;
+   border: solid black 2px;
+ }
+
+ .topRowSmalls5 {
+   height: 50px;
+   width: 110px;
+   background: grey;
+   margin-top: 65px;
+   float: right;
+   border: solid black 2px;
+ }
+
+ .topRowSmalls1:nth-last-child(-n+1) {
+   margin-right: -30px;
+ }
+
+ .topRowSmalls2:nth-last-child(-n+2) {
+   margin-right: -30px;
+ }
+
+ .topRowSmalls3:nth-last-child(-n+3) {
+   margin-right: -30px;
+ }
+
+ .topRowSmalls4:nth-last-child(-n+4) {
+   margin-right: -30px;
+ }
+
+ .topRowSmalls5:nth-last-child(-n+5) {
+   margin-right: -30px;
+ }
+
+ .twoDown {
+   height: 575px;
+   background: grey;
+   margin-top: 25px;
+   border: solid black 2px;
+ }
+
+ .twoAcross {
    height: 130px;
    background: grey;
-   margin-top: 30px;
+   margin-top: 25px;
+   margin-bottom: 25px;
    border: solid black 2px;
-}
+ }
 
-.midLong {
-   height: 450px;
-   background: grey;
-   margin-top: 30px;
-   border: solid black 2px;
-}
-
-.midShort {
-   height: 450px;
-   background: grey;
-   margin-top: 30px;
-   margin-bottom: 30px;
-   border: solid black 2px;
-}
-
-.bottomRow {
-   height: 130px;
+ .thirdMid {
+   height: 295px;
    background: grey;
    border: solid black 2px;
-}
+ }
+
+ .thirdRight {
+   height: 295px;
+   background: grey;
+   float: right;
+   border: solid black 2px;
+ }
+
+ .fourthBoxes {
+   height: 100px;
+   background: grey;
+   margin-top: 25px;
+   border: solid black 2px;
+   float: right;
+ }
+
+ .fourthBoxes:nth-last-child(-n+3) {
+   margin-right: 55px;
+ }
+
+ .lastFinal {
+    height: 130px;
+    background: grey;
+    margin-top: 30px;
+    border: solid black 2px;
+  }
+  .topRow {
+     height: 130px;
+     background: grey;
+     margin-top: 30px;
+     border: solid black 2px;
+   }*/

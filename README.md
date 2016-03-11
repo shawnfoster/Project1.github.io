@@ -24,7 +24,7 @@
   - ### Wahwah
     - Living Colour - Cult of Personality - Wahwah
     - Steve Miller band - Joker - Wahwah
-    - Slash - Wahwah
+    - Slash - Sweet Child O' Mine - Wahwah
     - Joe Satriani - Surfing with the alient (Wahwah)
   - ### Delay
     - POD - Youth of a Nation (Delay)
