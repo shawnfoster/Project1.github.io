@@ -1,10 +1,59 @@
-# Project1.github.io
+# Test Your Ear!
+## Can you guess the FX?
+***
+#### WDI Project #1 / Can you guess the FX?
+Concept: This is a game that will play random guitar samples with various guitar effects and user will be required to select an answer that they believe the guitarist or band is predominantly using.  The user will gain 1 point for every correct answer.  There is a total of 18 samples, therefor potential high score is 18.
+
+## Landing Page
+
+![alt text](images/ScreenShot.png "Logo Title Text 1")
 
 
-#Test Your Ear (FX)
+### Technologies used in creating this application:
+
+- HTML5
+- CSS
+- JavaScript
+- jQuery
+
+### How to install and run
+
+[Click to proceed to webage!](https://shawnfoster/Project1.github.io.git")
+
+### Technical Requirements
+
+Render a game in the browser BUT was not able to Switch turns between two players or more as I ran out of time.
+
+Designed logic for winning & visually display which player won
+Include separate HTML / CSS / JavaScript files
+Stick with KISS (Keep It Simple Stupid) and DRY (Don't Repeat Yourself) principles
+Use Javascript or jQuery for DOM manipulation
+Deploy your game online, where the rest of the world can access it
+Use semantic markup for HTML and CSS (adhere to best practices)
+Necessary Deliverables
+
+These are what you will be graded on!
+
+A working game, built by you, hosted somewhere on the internet.
+
+A link to your hosted working game in the URL section of your Github repo. This must be placed inside of your_username.github.io in a folder called project1. It will then be accessible via http://your_username.github.io/project1/
+
+
+A git repository hosted on Github, with a link to your hosted game, and frequent commits dating back to the very beginning of the project. We strongly encourage you to work our of the repository your_username.github.io
+A readme.md file with explanations of the technologies used, the approach taken, installation instructions, unsolved problems, etc.
+
+
+
+
+## Keymaster to Effects
+
+
+
+
+
 
 ## Samples (Effects)
-  - ### Marshall
+  - ### Stock
     - Slash - November Rain -
     - Randy Rhodes - Crazy Train
   - ### Big Muff
@@ -32,34 +81,3 @@
   - ### Whammy
     - Tom Morello - Like A Stone - Whammy
     - Rage Against The Machine - Killing in the name of
-
-##  Bounce and Trim Music Selections
-
-##  Build Skeleton Framework
-  - Keep very basic
-    - Logo
-    - Box with music clip
-    - Bullet selection (multiple choice)
-
-##  Setup functions
-  - Function 1
-    - Randomly select samples from database and post to player with loop
-  - Function 2
-    - Analyzes answer, compares to data and determines if win or loss
-  - Function 3
-    - Popup notification of win or loss
-  - Function 4
-    - Offer Bonus Question
-  - Function 5
-    - Calculate points and total
-  - Function 6
-    - Tracks score, high score board
-
-##  Elaborate on Graphics
-  - Come up with name and Logo
-
-## Add in 2 player
-
-## Add animation for winner
-
-## Questions for James, Bill or Jim

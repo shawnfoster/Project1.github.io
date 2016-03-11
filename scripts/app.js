@@ -1,37 +1,4 @@
-jQuery(document).on('ready', function() {
-    jQuery(window).on('resize', function() {
-        /* Tablet Portrait size to standard 960 (devices and browsers) */
-        if (jQuery(document).width() < 959 && jQuery(document).width() > 768) {
-           //change the attributes from the div #home_content (first parameter: the attribute, what it needs to be)
-           jQuery('#home_content').attr('class','sixteen columns');
-           jQuery('#slider').attr('class','sixteen columns');
-
-        }
-        else{
-            //change it back to normal (how the class was)
-            jQuery('#home_content').attr('class','nine columns');
-            jQuery('#slider').attr('class','nine columns');
-        }
-
-        /* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
-        if(jQuery(document).width() < 767 && jQuery(document).width() > 480) {
-            //code
-        }
-        else{
-
-        }
-
-        /* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
-        if(jQuery(document).width() < 479) {
-            //code
-        }
-        else{
-
-        }
-    }).trigger('resize'); // Trigger resize handlers.
-});//ready
-
-
+// This is the array of all songs that will be sampled Randomly
 var songList = [{
   file:       'sound_clips/are-you-gonna-go-my-way-flanger.mp3',
   fx:         'flanger',
@@ -44,7 +11,7 @@ var songList = [{
   band:       'Heart'
 }, {
   file:       'sound_clips/cherub-rock---muff---phaser.mp3',
-  fx:         "bigMuff",
+  fx:         "bigmuff",
   guitarist:  'Billy Corgan',
   band:       'Smashing Pumpkins'
 }, {
@@ -54,7 +21,7 @@ var songList = [{
   band:       'Nirvana'
 }, {
   file:       'sound_clips/crazy-train-marshall.mp3',
-  fx:         'marshall',
+  fx:         'stock',
   guitarist:  'Randy Rhodes',
   band:       'Black Sabbath'
 }, {
@@ -64,7 +31,7 @@ var songList = [{
   band:       'Crowded House'
 }, {
   file:       'sound_clips/glycerine-big-muff.mp3',
-  fx:         'bigMuff',
+  fx:         'bigmuff',
   guitarist:  'Gavin Rosdale',
   band:       'Bush'
 }, {
@@ -79,7 +46,7 @@ var songList = [{
   band:       'Boston'
 }, {
   file:       'sound_clips/november-rain---marshall.mp3',
-  fx:         'Marshall',
+  fx:         'stock',
   guitarist:  'Slash',
   band:       'Guns N Roses'
 }, {
@@ -99,34 +66,27 @@ var songList = [{
   band:       'Joe Satriani'
 }, {
   file:       'sound_clips/sweet-child-o-mine---Marshall.mp3',
-  fx:         'marshall',
+  fx:         'stock',
   guitarist:  'Slash',
   band:       'Guns n Roses'
 }, {
   file:       'sound_clips/the-joker--wahwah.mp3',
-  fx:         'flanger',
-  guitarist:  'Lenny Kravitz'
+  fx:         'wahwah',
+  guitarist:  'Unknown',
+  band:       'Steve Miller Band'
 }, {
-  file:       'sound_clips/are-you-gonna-go-my-way-flanger.mp3',
-  fx:         'flanger',
-  guitarist:  'Lenny Kravitz'
+  file:       'sound_clips/with-or-without-you---delay.mp3',
+  fx:         'delay',
+  guitarist:  'Edge',
+  Band:       'U2'
 }, {
-  file:       'sound_clips/are-you-gonna-go-my-way-flanger.mp3',
-  fx:         'flanger',
-  guitarist:  'Lenny Kravitz'
+  file:       'sound_clips/youth-of-the-nation---delay.mp3',
+  fx:         'delay',
+  guitarist:  'Unkown',
+  band:       'POD'
 }];
 
-// [{...}, {...}]
-// sound_clips/barracuda-flanger.mp3
-// sound_clips/cherub-rock---muff---phaser.mp3
-// sound_clips/come-as-you-are-chorus.mp3
-// sound_clips/crazy-train-marshall.mp3
-// sound_clips/dont-dream-its-over-chorus.mp3
-// sound_clips/glycerine-big-muff.mp3
-// sound_clips/message-in-a-bottle-chorus.mp3
-// sound_clips/more-than-a-feeling-chorus.mp3
-// sound_clips/november-rain---marshall.mp3
-
+// this is the variable that related back to songlist above and uses the math.random feature to randomly play
 var songSelected = songList[Math.floor(Math.random() * (songList.length - 1))],
     player        = $('audio')[0],
     playerSource  = $('audio source')[0],
@@ -136,27 +96,33 @@ var songSelected = songList[Math.floor(Math.random() * (songList.length - 1))],
 playerSource.src = songSelected.file;
 player.load();
 
+// these are the functions related to answer submission button.
 $('button').click(function(evt) {
   evt.preventDefault(); // Prevent form from submitting
 
-  var choice = $('input[name="testone"]:checked').val();
-  console.log(choice);
+// This variable uses the radio form to deterine if no choice was made, so that an alert remind user to select and FX
+var choice = $('input[name="testone"]:checked').val();
+console.log(choice);
   if (!choice) {
     alert('Select an FX');
     return false;
+  // if a selection is made, the choice is compared to key and value of the fx properties from array of songs
   } else if (choice.toLowerCase() === songSelected.fx.toLowerCase()) {
-    // 1. add one to score
+    // if selection is correct, an alert is issued to confirm that user is correct and adds one to score
+    $('.fire').show()
     alert('You are correct!');
     score += 1;
-    // 2. Replace text of .score element with updated score
-    $('.score').text(score)
+    // Replace text of .score element with updated score
+  $('.score').text(score)
+  // if choice does not equal the key nd value, an alert is kicked back informing that selection was wrong and then provides the correct answer
   } else if (choice !== songSelected.fx) {
-    alert('You are wrong! The correct answer is ' + songSelected.fx)
+    alert('You are incorrect! The correct answer is ' + songSelected.fx + '!')
   }
-  // 3. Choose a new random song
-  songSelected = songList[Math.floor(Math.random() * (songList.length - 1))];
-  // 4. Update the player .src with new song file
-  playerSource.src = songSelected.file;
-  player.load();
-  // 5. Load the player again (?)
+
+// Choose a new random song
+songSelected = songList[Math.floor(Math.random() * (songList.length - 1))];
+// Update the player .src with new song file and Load the player again
+playerSource.src = songSelected.file;
+player.load();
+$('.fire').hide()
 });
