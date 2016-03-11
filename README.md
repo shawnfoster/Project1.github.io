@@ -36,7 +36,7 @@ These are what you will be graded on!
 
 A working game, built by you, hosted somewhere on the internet.
 
-A link to your hosted working game in the URL section of your Github repo. This must be placed inside of your_username.github.io in a folder called project1. It will then be accessible via http://your_username.github.io/project1/
+A link to your hosted working game in the URL section of your Github repo. This must be placed inside of your_username.github.io in a folder called project1. It will then be accessible via http://shawnfoster.github.io/Project1.github.io/
 
 
 A git repository hosted on Github, with a link to your hosted game, and frequent commits dating back to the very beginning of the project. We strongly encourage you to work our of the repository your_username.github.io
