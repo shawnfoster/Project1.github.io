@@ -11,6 +11,13 @@ body {
   margin-top: -10px;
 }
 
+#instructions {
+  margin-bottom: -10px;
+  border: bold white;
+  border: solid white 2px;
+  background-color: lightgrey;
+}
+
 #fadeIn {
   display: none;
   text-align: center;
@@ -44,7 +51,8 @@ h1 {
 
  #selectAnswer {
     margin: auto;
-    margin-left: -5px;
+    margin-left: 0px;
+    margin-right: 15px;
     background: #E64331;
     font-size: 30px;
     display: block;
@@ -60,199 +68,89 @@ h1 {
  #player {
    margin: auto;
    display: block;
-
  }
+
  #answers {
    text-align: left;
-   font-size: 20px;
    padding-left: 0px;
  }
 
  .areYouAWinner {
-   display: block;
-   margin-left: -20px;
+   margin-left: -40px;
+   display: inline-block;
+   margin-right: 20px;
+   position: fixed;
  }
 
- .multipleChoice {
+ /*.multipleChoice {
    margin-top: -20px;
    text-align: left;
    width: 200px;
- }
+ }*/
 
+img, img.scale-with-grid {
+  outline: 0; max-width: 100%; height: auto;
+}
 
 .getItOne {
-  height: 250px;
+  height: 275px;
   width: 110px;
   margin-top: 15px;
-  margin-right: 7.8px;
-  margin-left: 7.8px;
+  margin-right: 15px;
+  margin-left: 15px;
+  background: lightgrey;
 }
 
-.getIt {
-  height: 250px;
+/*.getIt {
+  height: 275px;
   width: 110px;
   margin-top: 15px;
   margin-right: 7.8px;
   margin-left: 7.8px;
-}
+  background: lightgrey;
+}*/
 
 .getItMid {
   color: black;
-  height: 325px;
-  width: 110px;
-  padding-left: 40px;
+  height: 275px;
+  width: 200px;
+  padding-left: 20px;
   background: lightgrey;
   margin-top: 15px;
-  margin-right: 7.8px;
-  margin-left: 7.8px;
+  margin-right: 15px;
+  margin-left: 15px;
   border: solid white 2px;
 }
 
 .getItThree {
-  height: 250px;
+  height: 275px;
   width: 110px;
   margin-top: 15px;
-  margin-right: 7.8px;
-  margin-left: 7.8px;
+  margin-right: 15px;
+  margin-left: 15px;
+  background: lightgrey;
 }
 
 .submitOne {
-  height: 250px;
-  width: 210px;
+  height: 50px;
+  padding-top: 10px;
+  font-size: 20px;
+  text-align: center;
   margin-top: 35px;
-  margin-right: 7.8px;
-  margin-left: 7.8px;
-  background-color: grey;
+  margin-right: 15px;
+  margin-left: 15px;
+  background-color: lightgrey;
   word-wrap: break-word;
+  color: black;
 }
 
 .submitTwo {
-  height: 250px;
-  width: 110px;
+  height: 50px;
   margin-top: 35px;
-  margin-right: 7.8px;
-  margin-left: 7.8px;
-  background-color: grey;
+  margin-right: 15px;
+  margin-left: 15px;
 }
 
-.table {
+/*.table {
   margin-left: 20px;
-}
- /*.topRowSmalls1 {
-   height: 50px;
-   width: 110px;
-   background: grey;
-   margin-top: 65px;
-   margin-left: 10px;
-   float: right;
-   border: solid black 2px;
- }
-
- .topRowSmalls2 {
-   height: 50px;
-   width: 110px;
-   background: grey;
-   margin-top: 65px;
-   float: right;
-   border: solid black 2px;
- }
-
- .topRowSmalls3 {
-   height: 50px;
-   width: 110px;
-   background: grey;
-   margin-top: 65px;
-   float: right;
-   border: solid black 2px;
- }
-
- .topRowSmalls4 {
-   height: 50px;
-   width: 110px;
-   background: grey;
-   margin-top: 65px;
-   float: right;
-   border: solid black 2px;
- }
-
- .topRowSmalls5 {
-   height: 50px;
-   width: 110px;
-   background: grey;
-   margin-top: 65px;
-   float: right;
-   border: solid black 2px;
- }
-
- .topRowSmalls1:nth-last-child(-n+1) {
-   margin-right: -30px;
- }
-
- .topRowSmalls2:nth-last-child(-n+2) {
-   margin-right: -30px;
- }
-
- .topRowSmalls3:nth-last-child(-n+3) {
-   margin-right: -30px;
- }
-
- .topRowSmalls4:nth-last-child(-n+4) {
-   margin-right: -30px;
- }
-
- .topRowSmalls5:nth-last-child(-n+5) {
-   margin-right: -30px;
- }
-
- .twoDown {
-   height: 575px;
-   background: grey;
-   margin-top: 25px;
-   border: solid black 2px;
- }
-
- .twoAcross {
-   height: 130px;
-   background: grey;
-   margin-top: 25px;
-   margin-bottom: 25px;
-   border: solid black 2px;
- }
-
- .thirdMid {
-   height: 295px;
-   background: grey;
-   border: solid black 2px;
- }
-
- .thirdRight {
-   height: 295px;
-   background: grey;
-   float: right;
-   border: solid black 2px;
- }
-
- .fourthBoxes {
-   height: 100px;
-   background: grey;
-   margin-top: 25px;
-   border: solid black 2px;
-   float: right;
- }
-
- .fourthBoxes:nth-last-child(-n+3) {
-   margin-right: 55px;
- }
-
- .lastFinal {
-    height: 130px;
-    background: grey;
-    margin-top: 30px;
-    border: solid black 2px;
-  }
-  .topRow {
-     height: 130px;
-     background: grey;
-     margin-top: 30px;
-     border: solid black 2px;
-   }*/
+}*/
